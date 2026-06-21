@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE_GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('skies')">Skies</button>
+        <button onclick="filterImages('cars')">Cars</button>
+        <button onclick="filterImages('aesthetic')">Aesthetic</button>
+        <button onclick="filterImages('cute')">Cute</button>
+    </div>
+    <div class="gallery">
+        <div class="image skies">
+        <img src="https://plus.unsplash.com/premium_photo-1668091148044-056cd744e64a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2tpZXN8ZW58MHx8MHx8fDA%3D"
+          onclick="openLightbox(this)">
+        </div>
+        <div class="image cars">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyfGVufDB8fDB8fHww"
+              onclick="openLightbox(this)">
+        </div>
+        <div class="image aesthetic">
+            <img src="https://images.unsplash.com/photo-1718910130354-014c5fcdf194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGFzdGhldGljfGVufDB8fDB8fHww"
+               onclick="openLightbox(this)">
+        </div>
+        <div class="image cute">
+            <img src="https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGN1dGV8ZW58MHx8MHx8fDA%3D"
+               onclick="openLightbox(this)">
+        </div>
+        <div class="image skies">
+            <img src="https://images.unsplash.com/photo-1514897275838-55c3ed3ee738?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHNraWVzfGVufDB8fDB8fHww"
+            onclick="openLightbox(this)">
+        </div>
+        <div class="image cars">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyfGVufDB8fDB8fHww"
+            onclick="openLightbox(this)">
+        </div>
+        <div class="image aesthetic">
+            <img src="https://images.unsplash.com/photo-1678969332233-98ae21e515d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGFzdGhldGljfGVufDB8fDB8fHww"
+            onclick="openLightbox(this)">
+        </div>
+        <div class="image cute">
+            <img src="https://images.unsplash.com/photo-1630305131239-c8df91783f10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3V0ZXxlbnwwfHwwfHx8MA%3D%3D"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image skies">
+            <img src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHNraWVzfGVufDB8fDB8fHww"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image cars">
+            <img src="https://images.unsplash.com/photo-1506610654-064fbba4780c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image aesthetic">
+            <img src="https://images.unsplash.com/photo-1725984317719-b0aafacf1260?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxhc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image cute">
+            <img src="https://images.unsplash.com/photo-1574068468668-a05a11f871da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxjdXRlfGVufDB8fDB8fHww"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image skies">
+            <img src="https://images.unsplash.com/photo-1472552944129-b035e9ea3744?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHxza2llc3xlbnwwfHwwfHx8MA%3D%3D"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image cars">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image aesthetic">
+            <img src="https://images.unsplash.com/photo-1696090722524-7c22ca0826b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHxhc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"
+            onclick="openLightbox(this)">
+        </div>
+         <div class="image cute">
+            <img src="https://plus.unsplash.com/premium_photo-1707410048990-c9e0fb4e3956?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTczfHxjdXRlfGVufDB8fDB8fHww"
+            onclick="openLightbox(this)">
+        </div>
+    </div>
+    <div id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+
+    <img id="lightbox-img">
+
+    <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
